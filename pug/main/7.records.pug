@@ -1,0 +1,34 @@
+section#records
+	.container
+		+gt('hide','Записи интенсива нет в свободном доступе')
+		p.rec-text.text-sale.hide Но Вы можете купить запись интенсива за 250р. и радоваться жизни вместе с теми, кто её уже смотрел
+		a.button.button-sale.hide(href="" target="_blank") Купить
+		+gt('','Записи мастер-класса:')
+		#recs
+			ul.recs-links
+				li День 1
+				li День 2
+			.recs-container
+				.day.day-1
+					h4.day-title Запись от 16.10.19
+					.video-wrapper.video-wrapper-rec
+						iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+					p.rec-text Занятие состоится 16.10.19, в 19:00
+					p.rec-text Запись занятия появится здесь 17.10.19, после 13:00
+				.day.day-2
+					h4.day-title Запись от 17.10.19
+					.video-wrapper.video-wrapper-rec
+						iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+					p.rec-text Занятие состоится 17.10.19, в 19:00
+					p.rec-text Запись занятия появится здесь 18.10.19, после 13:00
+			p.rec-text.hide Запись занятия будет в открытом доступе до 21.10.19
+		+gt('general-title-feedback','Ваши вопросы к Никите пишите в формах ниже:')
+		.row
+			.col-md-6.col-sm-6
+				#vk
+					#vk_comments
+					script(type="text/javascript")
+						| VK.Widgets.Comments("vk_comments", { limit: 15,  attach: 0, autoPublish: 1 });
+			.col-md-6.col-sm-6
+				#fb
+					.fb-comments(data-href= head_url data-width="100%" data-numposts="15" data-order-by="reverse_time")
