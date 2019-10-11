@@ -1,0 +1,40 @@
+#about
+	padding 60px 0
+	background-color: #261F2F
+	background-image url(../img/about_bg.jpg)
+	background-repeat no-repeat
+	background-position: center
+	background-size: cover
+	position relative
+	&:before
+		@extend #main:before
+	.container
+		@extend #main .container
+.about-packet
+	width: 100%;
+	max-width: 760px;
+	padding: 20px;
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0 0 7px 15px rgba(0,0,0,0.15);
+	border-radius: 5px;
+	float left
+	margin-bottom:  45px
+	&-2
+		float: right
+		text-align: right
+	&-title
+		font-size: 30px
+		font-family: DiB
+		color #3E9697
+		// text-shadow: 0 0 3px rgba(0,0,0,.25)
+	&-subtitle
+		font-size: 20px
+		text-decoration: underline
+		margin 10px 0 15px
+		font-family: DiB
+	&-text
+		margin-bottom: 10px
+		span
+			font-family: DiB
+		&:last-of-type
+			margin-bottom: 0

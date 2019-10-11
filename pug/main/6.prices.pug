@@ -16,14 +16,14 @@
 
 section#prices
 	.container
-		+gt('','Выберите свой пакет участия:')
+		+gt('general-title-prices','Выберите свой пакет участия:')
 		.packets
 			.row
 				.col-md-6.col-sm-6
 					.packet
 						.packet-head
 							h4.packet-head-title пакет
-								span
+								span Золото
 						.packet-body
 							p.packet-body-text Курс “Настоящий Дизайн Человека”
 							p.more-button(data-toggle="modal" data-target="#lessonsModal") подробнее
@@ -39,11 +39,11 @@ section#prices
 					.packet
 						.packet-head
 							h4.packet-head-title пакет
-								span
+								span Платина
 						.packet-body
 							p.packet-body-text Курс “Настоящий Дизайн Человека”
 							p.more-button(data-toggle="modal" data-target="#lessonsModal") подробнее
-							p.packet-body-text “Программа MetaDesign HD”
+							p.packet-body-text.packet-body-text-2 “Программа MetaDesign HD”
 						.packet-footer
 							p.cost.cost-full Стоимость:
 								span=full_2
@@ -51,7 +51,7 @@ section#prices
 								span#sale-2=sale_2
 							p.cost.cost-today Стоимость сегодня:
 								span#today-2=today_2
-							+bl('button-cost', sale_2, '_blank', 'Выбрать')
+							+bl('button-cost', link_2, '_blank', 'Выбрать')
 		.prepayment
 			h4.prepayment-title Акция!!!
 			p.prepayment-text Платите 500р., бонусом получаете 
