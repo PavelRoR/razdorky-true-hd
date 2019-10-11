@@ -1,5 +1,5 @@
 -var full_1 = '9 400р.';
--var full_2 = '18 900р.';
+-var full_2 = '19 800р.';
 
 -var sale_1 = '500р.';
 -var sale_2 = '1 000р.';
@@ -34,7 +34,7 @@ section#prices
 								span#sale-1=sale_1
 							p.cost.cost-today Стоимость сегодня:
 								span#today-1=today_1
-							+bl('button-cost',link_1,'_blank','Выбрать')
+							+bl('button-cost',link_1,'_blank','Выбрать', 'link-1')
 				.col-md-6.col-sm-6
 					.packet
 						.packet-head
@@ -51,7 +51,7 @@ section#prices
 								span#sale-2=sale_2
 							p.cost.cost-today Стоимость сегодня:
 								span#today-2=today_2
-							+bl('button-cost', link_2, '_blank', 'Выбрать')
+							+bl('button-cost', link_2, '_blank', 'Выбрать', 'link-2')
 		.prepayment
 			h4.prepayment-title Акция!!!
 			p.prepayment-text Платите 500р., бонусом получаете 
@@ -60,7 +60,7 @@ section#prices
 				| На счет зачисляется 
 				span#prepayment-credited= prep_cred
 			a.button.prepayment-button(href= prep_link target="_blank")#prepayment-link Оплатить 500р.
-		.timer
+		.timer.hide
 			h4.timer-title Цена изменится через:
 			.clock
 			.clock-stop
